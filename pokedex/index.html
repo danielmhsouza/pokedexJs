@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <title>Pokedex</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="section">
+        <main class="main">
+            <header class="top">
+                <div class="circle">
+                    <div class="mini-circle"></div>
+                </div>
+
+                <h1>POKEDEX</h1>
+            </header>
+
+            <div class="visor">
+                <div class="back-visor">
+                    <div class="wrapper-circles">
+                        <div class="mini-circle"></div>
+                        <div class="mini-circle"></div>
+                    </div>
+
+                    <div class="back-screen">
+                        <div class="screen">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/132.png"
+                                alt="front" id="img-front">
+                            <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/back/132.png"
+                                alt="back" id="img-back">
+                        </div>
+                    </div>
+
+                    <div class="details-back-visor">
+                        <div class="mini-circle"></div>
+
+                        <div class="sound">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="visor-info">
+                <div class="back-visor">
+                    <div class="back-screen">
+                        <div class="screen">
+                            <h2 id="name">Ditto</h2>
+                            <div class="line">
+                                <p>Type:</p>
+                                <p id="type">water</p>
+                            </div>
+                            <div class="line">
+                                <p>Ability:</p>
+                                <p id="ability">1,58</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-button">
+                <button id="button">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </button>
+            </div>
+
+            <footer class="inputs">
+                <input type="text" name="input" id="input" value="1">
+            </footer>
+        </main>
+    </section>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

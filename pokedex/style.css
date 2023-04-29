@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P';
+}
+
+:root{
+    --var-grey: #dedfde;
+    --var-red: #d61230;
+    --var-border-red: #770c1c;
+    --var-black: #222222;
+    --var-green: #4ca060;
+}
+
+.section{
+    width: 100vw;
+    height: 100vh;
+    background-color: #222;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    width: 400px;
+    height: 95%;
+    border-radius: 16px;
+
+    background: var(--var-red);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.top{
+    width: 100%;
+    height: 100px;
+
+    border-bottom: 5px solid var(--var-border-red);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.top .circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    background-color: #2c9ae1;
+    border: 5px solid var(--var-grey);
+    
+    padding-left: 15px;
+    padding-top: 15px;
+
+    animation: brilho 3s 300ms ease infinite;
+}
+
+
+@keyframes brilho {
+    0%{
+        box-shadow: 0 0 0 #51aeec;
+    }
+    50%{
+        box-shadow: 0 0 80px #51aeec;
+    }
+}
+
+
+
+.circle .mini-circle{
+    width: 18px;
+    height: 18px;
+    border-radius: 100%;
+    background-color: var(--var-grey);
+}
+
+.top h1{
+    color: var(--var-grey);
+}
+
+.visor{
+    width: 100%;
+    height: 250px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visor .back-visor{
+    width: 85%;
+    height: 85%;
+    background-color: var(--var-grey);
+    padding: 10px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.back-visor .wrapper-circles .mini-circle{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+
+    background-color: var(--var-black);
+}
+
+.wrapper-circles{
+    width: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.back-screen{
+    background-color: var(--var-black);
+    width: 90%;
+    height: 80%;
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-screen .screen{
+    width: 95%;
+    height: 90%;
+    border-radius: 8px;
+    background-color: var(--var-green);
+    display: flex;
+    justify-content: space-around;
+}
+
+.back-screen .screen img{
+    width: 120px;
+    height: 100%;
+}
+
+.details-back-visor{
+    width: 100%;
+    height: 30px;
+    margin-top: 2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.details-back-visor .mini-circle{
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    animation: pisca 500ms ease infinite;
+    background-color: red;
+}
+
+
+@keyframes pisca {
+    0%, 100%{
+        background-color: rgb(134, 0, 0);
+    }
+    50%{
+        background-color: rgb(255, 24, 24);
+        box-shadow: 0 0 15px red;
+    }
+}
+
+.details-back-visor .sound{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40px;
+    height: 15px;
+}
+
+.details-back-visor .sound div{
+    width: 100%;
+    height: 2px;
+    background-color: var(--var-black);
+}
+
+.visor-info{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visor-info .back-visor{
+    width: 80%;
+    height: 98%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.visor-info .back-visor .screen{
+    flex-direction: column;
+    text-align: center;
+    padding: 5px;
+}
+
+.visor-info .back-visor .screen .line{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.visor-info .back-visor .screen h2{
+    font-size: 20px;
+}
+
+.section-button{
+    width: 80%;
+}
+
+.section-button button{
+    cursor: pointer;
+    border-radius: 100%;
+    border: none;
+    width: 50px;
+    height: 50px;
+    background-color: var(--var-black);
+    color: var(--var-grey);
+    box-shadow: 3px 1px 5px black;
+}
+
+.inputs input{
+    width: 100px;
+    height: 60px;
+    margin: 5px;
+    text-align: center;
+    background-color: var(--var-green);
+}
